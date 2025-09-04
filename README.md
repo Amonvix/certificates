@@ -10,6 +10,7 @@ Este espaço serve como meu **portfólio digital**, mostrando meu lado sério e 
 
 Além dos certificados listados aqui, você pode acompanhar minhas **badges oficiais e mais recentes** pela plataforma **Google Cloud Skills Boost**:  
 👉 [Meu Perfil Público no Cloud Skills Boost](https://partner.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447)
+👉 [Meu Credly com outros conhecimentos reconhecidos](https://www.credly.com/users/daniel-pedroso)
 
 ---
 
