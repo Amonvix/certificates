@@ -1,0 +1,278 @@
+
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>Responsible AI: Applying AI Principles with Google Cloud | Google Cloud Skills Boost</title>
+<meta name="action-cable-url" content="/cable" />
+<script>
+//<![CDATA[
+window.gon={};gon.deployment="google-run";
+//]]>
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    if (arguments[0] === 'event') {
+      dataLayer.push({ event: arguments[1], eventParams: arguments[2] }, { eventParams: undefined });
+    } else {
+      dataLayer.push(arguments);
+    }
+  }
+  let gtmLoaded = false;
+  function glueCookieNotificationBarLoaded() {
+    if (!gtmLoaded) {
+      dataLayerInit(
+        false,
+        false,
+        false,
+        false,
+        'google-run'
+      );
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer',"GTM-MBRHNDG7");
+      pushPageEvent();
+      if (typeof sessEvent !== 'undefined') {
+        pushSessionEvent(sessEvent, sessLoginStatus, sessPreviousPath);
+      }
+      gtmLoaded = true;
+    }
+  }
+</script>
+<script src="https://cdn.qwiklabs.com/assets/hallofmirrors/polyfills/webcomponents-loader-2e147cb1679d97581f981243bfc2d1c03dc34a58.js"></script>
+<script src="https://cdn.qwiklabs.com/assets/head_scripts-78121e337319c81329ed63eb61196ea57f74a57d.js"></script>
+<script src="https://cdn.qwiklabs.com/assets/vendor-5ee6eafe71fd3831091397e1aa344044a8642273.js"></script>
+<script src="https://cdn.qwiklabs.com/assets/application-7c2a0790596834e874c685a2b2516dd683cd5542.js"></script>
+<script src="https://cdn.qwiklabs.com/assets/hallofmirrors/hallofmirrors-64b98dcd3e4375d43972dad6129d0b57f0c9124a.js"></script>
+<script src="https://support.google.com/inapp/api.js"></script>
+
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="C533fJ3MM1NitcaZ2umJZZQTLvkqJtr5OsG4ViXwlWBFhPYJFB8RQABos4AAtmUeLUHb7gib86mvyvR6j4aqUQ" />
+<meta content='width=device-width, initial-scale=1.0, user-scalable=yes' name='viewport'>
+<meta content='1rRsY0INj8RvwB5EF5pwdxt2A2P9aDgAlsICaJ0d5w0' name='google-site-verification'>
+<meta content='#3681E4' property='msapplication-TileColor'>
+<meta content='/favicon-144.png' property='msapplication-TileImage'>
+<meta content='{&quot;userId&quot;:null,&quot;experimentIds&quot;:[&quot;support_callouts&quot;,&quot;learning_plan_search&quot;,&quot;lab_instruction_h2_reduced_margin&quot;,&quot;use_mosaic_cache&quot;,&quot;hide_unpopular_filters&quot;,&quot;search_updates&quot;,&quot;chat_off_for_signed_out_users&quot;,&quot;innovator_sign_in&quot;,&quot;catalog_filters_button&quot;,&quot;org_invite_link&quot;,&quot;quota_management&quot;,&quot;alexandria_subscriptions_pagination&quot;,&quot;innovator_membership&quot;,&quot;hide_price&quot;,&quot;lab_expanded_hint&quot;,&quot;catalog_filter_chips&quot;,&quot;developer_premium&quot;,&quot;wipeout_hard_delete&quot;,&quot;gamification&quot;,&quot;chime_email_migration&quot;,&quot;landing_page&quot;,&quot;tell_navy_allowed_zones&quot;,&quot;iw_ai_assistant&quot;,&quot;gamification_xp&quot;,&quot;oauth_risc_shutoff&quot;,&quot;credly&quot;,&quot;used_in&quot;,&quot;innovator_membership_modal&quot;,&quot;switch_path_and_explore_headers&quot;,&quot;lab_warning_experiment&quot;,&quot;feedback&quot;,&quot;no_lti_session_redirect&quot;,&quot;gwg_catalog&quot;,&quot;show_new_course_exams&quot;,&quot;rise_poc&quot;,&quot;new_cards&quot;,&quot;use_docebo_features&quot;,&quot;lti_no_automatic_user_account&quot;,&quot;search_autocomplete&quot;,&quot;search_async&quot;,&quot;credly_integration_announcement_modal&quot;,&quot;front_door_landing_page&quot;,&quot;onramp&quot;,&quot;lab_sso&quot;,&quot;lab_ux&quot;,&quot;gamification_achievements&quot;,&quot;ai_skills&quot;,&quot;search_suggestions&quot;,&quot;no_free_chat_rollout&quot;,&quot;show_interview_warmup&quot;,&quot;search_sort_by&quot;,&quot;guest_user&quot;,&quot;challenge_lab_fast_track&quot;,&quot;entity_api_keys&quot;,&quot;gamification_streaks&quot;,&quot;dedup_badge&quot;,&quot;google_dev_payment&quot;,&quot;header_search_bar&quot;,&quot;show_annual_purchase_now&quot;,&quot;teams&quot;,&quot;program_announcements&quot;,&quot;docebo_ux&quot;,&quot;subscription_ux&quot;,&quot;new_report_fields&quot;,&quot;docebo_sync&quot;,&quot;cache_explore_page_result&quot;,&quot;course_monetization&quot;,&quot;reroute_new_interview_warmup&quot;,&quot;canonical_domain_redirect&quot;,&quot;one_tap&quot;,&quot;gcsbo_free&quot;,&quot;use_mosaic&quot;,&quot;content_provider_admin&quot;]}' name='help-api-product-data'>
+<meta content='{&quot;groupIds&quot;:[]}' name='help-api-custom-data'>
+<meta content='summary_large_image' name='twitter:card'>
+<meta content='&lt;p&gt;As the use of enterprise Artificial Intelligence and Machine Learning continues to grow, so too does the importance of building it responsibly. A challenge for many is that talking about responsible AI can be easier than putting it into practice. If you’re interested in learning how to operationalize responsible AI in your organization, this course is for you. &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;In this course, you will learn how Google Cloud does this today, together with best practices and lessons learned, to serve as a framework for you to build your own responsible AI approach.&lt;/p&gt;' property='og:description'>
+<meta content='website' property='og:type'>
+<meta content='Google Cloud Skills Boost' property='og:site_name'>
+<meta content='Responsible AI: Applying AI Principles with Google Cloud' property='og:title'>
+<meta content='https://cdn.qwiklabs.com/vbrFqw4TKTZb%2FjY8z32R81dK8C9JZlN4td3b%2BUb0afM%3D' property='og:image'>
+
+
+
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=ar' hreflang='ar' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=de' hreflang='de' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=es' hreflang='es' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=fr' hreflang='fr' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=fr_CA' hreflang='fr-CA' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=he' hreflang='he' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=id' hreflang='id' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=it' hreflang='it' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=ja' hreflang='ja' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=ko' hreflang='ko' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=pl' hreflang='pl' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=pt_BR' hreflang='pt-BR' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=pt_PT' hreflang='pt-PT' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=ru' hreflang='ru' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=tr' hreflang='tr' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=uk' hreflang='uk' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=zh' hreflang='zh' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=zh_TW' hreflang='zh-TW' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464' hreflang='en' rel='alternate'>
+<link href='https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464' hreflang='x-default' rel='alternate'>
+<link href='https://cdn.qwiklabs.com/X46FrQX4iLxHW5MxL8jICvgZM0evMEKscCeQO%2BazGdo%3D' rel='shortcut icon' type='image/x-icon'>
+<link as='font' crossorigin='anonymous' href='https://fonts.gstatic.com/s/googlesymbols/v354/HhyAU5Ak9u-oMExPeInvcuEmPosC9zSpYaEEU68cdvrHJg.woff2' rel='preload' type='font/woff2'>
+<link as='font' crossorigin='anonymous' href='https://fonts.gstatic.com/s/googlematerialicons/v144/Gw6kwdfw6UnXLJCcmafZyFRXb3BL9rvi0QZG3Q.woff2' rel='preload' type='font/woff2'>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400|Roboto+Mono:400,700|Roboto:300,400,500,700|Google+Sans:300,400,500,700|Google+Sans+Display:400|Material+Icons|Google+Material+Icons|Google+Sans+Text:400,500,700" media="screen" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Symbols:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" media="screen" />
+
+<link rel="stylesheet" href="https://cdn.qwiklabs.com/assets/application-36b5039e7849f43113e4f197b6a8a4e9ada460a6.css" media="all" />
+<link rel="stylesheet" href="https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.css" media="screen" />
+
+
+<style>
+  :root {
+    --primary-text-on-surface-color: #355d9c;
+    --primary-text-on-surface-color-dark: #2f538b;
+    --primary-text-on-surface-color-darker: #29497a;
+    --primary-text-on-surface-color-darkest: #243e69;
+    --primary-surface-color: #586d8d;
+    --primary-surface-color-rgb: 88,109,141;
+    --primary-surface-color-light: #e0e4eb;
+    --primary-surface-color-lightest: #eff2f5;
+    --text-on-primary-color: #ffffff;
+    --accent-text-on-surface-color: #f000e8;
+    --accent-surface-color: #f9ab00;
+    --accent-surface-color-rgb: 249,171,0;
+    --accent-surface-color-light: #ffefcc;
+    --text-on-accent-color: #0a0a0a;
+  }
+</style>
+
+
+
+</head>
+<body class='l-no-padding'>
+<ql-drawer-container class='body-container'>
+<ql-drawer id='app-nav' mode='over' slot='drawer' width='288'>
+<div class='nav-panel__logo'>
+<div class="custom-logo"><img alt="Google Cloud Skills Boost" height="24" aria-label="Google Cloud Skills Boost" src="https://cdn.qwiklabs.com/PGyhmgS3zZncIEGywnx5UXsKwepRRFQ9BhAg%2FWHNrlQ%3D" /></div>
+</div>
+<nav class='ql-sidenav'>
+<ql-sidenav-item href='/catalog' icon='school' label='Explore'>
+
+</ql-sidenav-item>
+
+<ql-sidenav-item href='/paths' icon='playlist_add_check' label='Paths'>
+
+</ql-sidenav-item>
+
+<ql-sidenav-item href='/subscriptions' icon='subscriptions' label='Subscriptions'>
+
+</ql-sidenav-item>
+
+</nav>
+
+</ql-drawer>
+<ql-drawer-content class='body-content' slot='drawer-content'>
+<div class='sticky'>
+<ql-toolbar class='app-toolbar' jumpEnabled role='banner'>
+<div class='toolbar-navigation' slot='navigation'>
+<ql-toggle-button animatedToggle="true" expandable="true" for="app-nav" onIcon="menu_open" offIcon="menu" label="Menu" tip="Menu" class=""></ql-toggle-button>
+</div>
+<div class='toolbar-title ql-title-medium' slot='title'><a class="custom-logo" aria-label="Google Cloud Skills Boost" href="/"><div class="custom-logo"><img alt="Google Cloud Skills Boost" height="24" aria-label="Google Cloud Skills Boost" src="https://cdn.qwiklabs.com/PGyhmgS3zZncIEGywnx5UXsKwepRRFQ9BhAg%2FWHNrlQ%3D" /></div></a></div>
+<div class='toolbar-actions' slot='action'>
+
+<ql-icon-button class='mobile-hide' data-toggle='tooltip' icon='help_outline' id='help-menu-button' label='Help options' title='Help'></ql-icon-button>
+<ql-menu for='help-menu-button' id='help-menu'>
+<ql-menu-item data-analytics-action='opened_help' data-analytics-label='profile' label='Help Center' onclick='hallofmirrors.helpService.startHelp({&quot;productData&quot;:{&quot;userId&quot;:null},&quot;context&quot;:&quot;profile&quot;})'></ql-menu-item>
+<ql-menu-item href='mailto:support@qwiklabs.com' label='Email support'></ql-menu-item>
+<ql-menu-item href='https://reportingwidget.google.com/widget/54?cid=1&amp;url=https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?' label='Report Illegal Content'></ql-menu-item>
+</ql-menu>
+
+<!-- Main more button (mobile only) -->
+<ql-icon-button aria-expanded='false' aria-haspopup aria-label='More options' class='mobile-show' data-toggle='tooltip' icon='more_vert' id='mobile-more-menu-button' title='More options'></ql-icon-button>
+<!-- Main more menu -->
+<ql-menu for='mobile-more-menu-button' id='mobile-more-menu'>
+<!-- Help submenu trigger item -->
+<ql-menu-item aria-controls='help-submenu' aria-expanded='false' aria-haspopup='true' id='help-submenu-button' label='Help' role='button' tabindex='0'></ql-menu-item>
+<!-- Language Submenu Trigger Item -->
+<ql-menu-item aria-controls='language-submenu' aria-expanded='false' aria-haspopup='true' id='language-submenu-button' label='Language' role='button' tabindex='0'></ql-menu-item>
+</ql-menu>
+<!-- Help Submenu -->
+<!-- This menu is controlled by the item above. -->
+<ql-menu class='submenu' for='help-submenu-button' id='help-submenu'>
+<ql-menu-item data-analytics-action='opened_help' data-analytics-label='' label='Help Center' onclick='hallofmirrors.helpService.startHelp({&quot;productData&quot;:{&quot;userId&quot;:null},&quot;context&quot;:&quot;&quot;})'></ql-menu-item>
+<ql-menu-item href='mailto:support@qwiklabs.com' label='Email support'></ql-menu-item>
+<ql-menu-item href='https://reportingwidget.google.com/widget/54?cid=1&amp;url=https%3A%2F%2Fwww.cloudskillsboost.google%2Fpublic_profiles%2F19443476-a9c9-43e3-9da5-47fea2a64447%2Fbadges%2F18028464%3F' label='Report Illegal Content'></ql-menu-item>
+</ql-menu>
+<!-- Language Submenu -->
+<!-- This menu is controlled by the item above. -->
+<ql-menu class='submenu' for='language-submenu-button' id='language-submenu'>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='ar' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=ar' label='العربية‬‎' lang='ar' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='de' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=de' label='Deutsch' lang='de' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='en' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=en' label='English' lang='en' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='es' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=es' label='español (Latinoamérica)' lang='es' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='fr' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=fr' label='français' lang='fr' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='fr_CA' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=fr_CA' label='français (Canada)' lang='fr-CA' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='he' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=he' label='עברית' lang='he' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='id' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=id' label='bahasa Indonesia' lang='id' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='it' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=it' label='italiano' lang='it' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='ja' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=ja' label='日本語' lang='ja' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='ko' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=ko' label='한국어' lang='ko' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='pl' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=pl' label='polski' lang='pl' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='pt_BR' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=pt_BR' label='português (Brasil)' lang='pt-BR' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='pt_PT' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=pt_PT' label='português (Portugal)' lang='pt-PT' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='ru' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=ru' label='русский' lang='ru' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='tr' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=tr' label='Türkçe' lang='tr' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='uk' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=uk' label='українська' lang='uk' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='zh' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=zh' label='简体中文' lang='zh' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='zh_TW' href='/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464?locale=zh_TW' label='繁體中文' lang='zh-TW' role='menuitem'></ql-menu-item>
+</ql-menu>
+
+<ql-button ariaLabel='Join by creating an account' data-analytics-action='clicked_header_join' href='/users/sign_up'>
+Join
+</ql-button>
+<ql-button data-analytics-action='clicked_header_sign_in' href='/users/sign_in'>
+Sign in
+</ql-button>
+
+
+</div>
+</ql-toolbar>
+<div class='console-free-trial-banner-container'>
+<div class='trial-banner'>
+<div class='trial-banner-actions'>
+<p class='trial-banner-text ql-body-medium'>
+Apply your skills in Google Cloud console
+</p>
+<div class='custom-action'>
+<ql-button elevated href='https://console.cloud.google.com/freetrial' label='Get started'></ql-button>
+</div>
+</div>
+</div>
+</div>
+
+<div id='callout-container'>
+</div>
+
+</div>
+<div class='page-header'>
+</div>
+<main id='jump-content'>
+
+<div class='l-wrapper profile-badge'>
+<h3>Daniel Pedroso has earned this award!</h3>
+<a href="/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447">View public profile for Daniel Pedroso</a>
+<ql-badge badge='{&quot;id&quot;:18028464,&quot;title&quot;:&quot;Responsible AI: Applying AI Principles with Google Cloud&quot;,&quot;imageSrc&quot;:&quot;https://cdn.qwiklabs.com/vbrFqw4TKTZb%2FjY8z32R81dK8C9JZlN4td3b%2BUb0afM%3D&quot;,&quot;badgeHref&quot;:null,&quot;url&quot;:&quot;https://www.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447/badges/18028464&quot;,&quot;completedAt&quot;:&quot;Sep  2, 2025&quot;,&quot;twitterOptions&quot;:null,&quot;linkedInOptions&quot;:null}' large public></ql-badge>
+</div>
+
+</main>
+
+</ql-drawer-content>
+</ql-drawer-container>
+
+<span class='hidden' id='flash-sibling-before'></span>
+<ql-snackbar></ql-snackbar>
+
+<script data-glue-cookie-notification-bar-category='2A' src='https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.js'></script>
+
+
+
+
+
+<script>
+  document.addEventListener("turbo:load", function () {
+    ql.initMaterialInputs();
+    initChosen();
+    initTabs();
+    ql.list.init();
+    ql.favoriting.init();
+    ql.header.myAccount.init();
+    initTooltips();
+    ql.autocomplete.init();
+    ql.modals.init();
+    ql.toggleButtons.init();
+    ql.analytics.init();
+    Turbo.session.drive = false;
+    ql.messages.init();
+  ql.jumpContent.init();
+  
+  }, {once: true});
+</script>
+
+</body>
+</html>
+
+
