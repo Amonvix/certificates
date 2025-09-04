@@ -1,16 +1,36 @@
 # 🎓 Meu Portfólio de Certificados
 
+🌎 [English version here](README-EN.md)
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![GCP](https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white)
+![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)
+
 Bem-vindo ao meu **repositório de conquistas profissionais!**  
 Aqui estão reunidos meus **certificados em tecnologia, inteligência artificial, computação em nuvem e desenvolvimento de software.**  
 Este espaço serve como meu **portfólio digital**, mostrando meu lado sério e comprometido com estudo e trabalho, mas sem perder a descontração que faz parte de quem eu sou.
 
 ---
 
+## 🚀 Meu Portfólio em Ação
+
+Atualmente, estou focado em **engenharia de software e infraestrutura**, com ênfase em **IaC (Infra as Code)**, **Terraform** e desenvolvimento de soluções em nuvem.  
+Aqui estão **três exemplos de projetos ativos em Fly.io** que mostram minha evolução prática:
+
+- [Titanic Survival Prediction](https://titanic-survival-prediction.fly.dev/) → Modelo de Machine Learning em produção via API.
+- [Java CRUD 2025 - Spring Boot](https://java-crud-2025-springboot.fly.dev/) → Exemplo de CRUD robusto em Java com Spring Boot.
+- [Noats](https://noats.fly.dev/) → Gerador inteligente de currículos otimizado para ATS, feito em Python.
+
+Esses projetos reforçam minha transição definitiva de analista de incidentes para **desenvolvedor de soluções e engenheiro de infraestrutura**, mostrando na prática o que sou capaz de construir.
+
+---
+
 ## 🏅 Minhas Badges Mais Recentes
 
 Além dos certificados listados aqui, você pode acompanhar minhas **badges oficiais e mais recentes** pela plataforma **Google Cloud Skills Boost**:  
-👉 [Meu Perfil Público no Cloud Skills Boost](https://partner.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447)
-
+👉 [Meu Perfil Público no Cloud Skills Boost](https://partner.cloudskillsboost.google/public_profiles/19443476-a9c9-43e3-9da5-47fea2a64447)  
 👉 [Meu Credly com outros conhecimentos reconhecidos](https://www.credly.com/users/daniel-pedroso)
 
 ---
@@ -64,12 +84,14 @@ Além dos certificados listados aqui, você pode acompanhar minhas **badges ofic
 
 ---
 
-## 🌟 Destaques
+## 🌟 Destaques Que Valem a Pena Notar
 
-- Certificações **Microsoft, Google Cloud e Azure**  
-- Cursos renomados como **Elements of AI** e **Prompt Engineering**  
-- Habilidades práticas em **Python, BI, DevOps e Nuvem**  
-- Dedicação à **IA Generativa** e **Automação Inteligente**
+- 🏅 **Multiplataforma**: Certificações abrangendo **Microsoft, Google Cloud e Azure**, mostrando versatilidade em múltiplas nuvens.
+- 🚀 **Cursos de Referência**: Participação em formações renomadas como **Elements of AI** e **Prompt Engineering**, sempre na linha de frente do aprendizado.
+- 🛠️ **Experiência Prática**: Habilidades sólidas e comprovadas em **Python, BI, DevOps** e **Computação em Nuvem**, com projetos que falam por si.
+- 🤖 **Inovação Constante**: Foco em **IA Generativa** e **Automação Inteligente**, levando soluções para o próximo nível.
+
+> **Nota:** Estes destaques são pensados para atrair atenção sem atrapalhar filtros de recrutamento automáticos (ATS). Aqui você vê o equilíbrio entre a minha seriedade profissional e a vontade de inovar com um toque pessoal. Nada de exageros: só o melhor de cada conquista.
 
 ---
 
